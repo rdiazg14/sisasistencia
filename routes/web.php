@@ -15,9 +15,14 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('auth.login');
+})->name('inicio');
+
+Route::group(['middleware' => ['auth']], function()  {
+
 
 Route::get("/admin", [AdminController::class,'inicio']);
 
 Route::get("/reportes", [AdminController::class,'reportes']);
+
+});

@@ -39,7 +39,7 @@
           </div>
         </div>
         @error('email')
-        <span>{{ $message }}</span>
+        <span class="text-danger">{{ $message }}</span>
       @enderror
     <div class="input-group mb-3">
           <input type="password" class="form-control" name="password" placeholder="Contraseña">
@@ -50,7 +50,7 @@
           </div>
         </div>
         @error('password')
-        <span>{{ $message }}</span>
+        <span class="text-danger">{{ $message }}</span>
       @enderror
     <div class="row">
           <div class="col-8">
