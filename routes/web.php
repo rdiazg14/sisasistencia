@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AlumnosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +25,8 @@ Route::group(['middleware' => ['auth']], function()  {
 Route::get("/admin", [AdminController::class,'inicio']);
 
 Route::get("/reportes", [AdminController::class,'reportes']);
+
+
+Route::resource('/alumnos',AlumnosController::class);
 
 });

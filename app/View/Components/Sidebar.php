@@ -3,6 +3,7 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use Illuminate\Support\Facades\Route;
 
 class Sidebar extends Component
 {
@@ -23,6 +24,54 @@ class Sidebar extends Component
      */
     public function render()
     {
-        return view('components.sidebar');
+        $ruta_actual = Route::currentRouteName();
+        $tituloSistema = 'SISAsistencia';
+        $nombreUsuario = auth()->user()->name;
+        $menuTablero = [
+            'titulo' => 'DASHBOARD',
+            'ruta' => 'admin'
+        ];
+        $opcionesMenu = [
+
+            "Registrar Asistencia" => [
+                [
+                    'titulo' => 'Alumnos',
+                    'ruta' => route('alumnos.index')
+                ],
+                [
+                    'titulo' => 'Docentes',
+                    'ruta' => 'docentes'
+                ],
+                [
+                    'titulo' => 'Administrativos',
+                    'ruta' => 'administrativos'
+                ],
+            ],
+            "Reporte Asistencia" => [
+                [
+                    'titulo' => 'Alumnos',
+                    'ruta' => 'reportes' //route('alumnos.reportes')
+                ],
+                [
+                    'titulo' => 'Docentes',
+                    'ruta' => 'docentes'
+                ],
+                [
+                    'titulo' => 'Administrativos',
+                    'ruta' => 'administrativos'
+                ],
+            ]
+        ];
+
+
+
+        return view('components.sidebar',[
+            'tituloSistema' => $tituloSistema,
+            'nombreUsuario' => $nombreUsuario,
+            'menuTablero' => $menuTablero,
+            'opcionesMenu' => $opcionesMenu,
+            'ruta_actual' => $ruta_actual
+            
+        ]);
     }
-}
+    }
