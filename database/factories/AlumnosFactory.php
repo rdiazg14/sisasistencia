@@ -17,9 +17,9 @@ class AlumnosFactory extends Factory
             'nombre' => $this->faker->firstName(),
             'apellidopa' => $this->faker->lastName(),
             'apellidoma' => $this->faker->lastName(),
-            'dni' => $this->faker->unique()->numberBetween(10000000,99999999),
+            'dni' => $this->faker->unique()->numberBetween(71434343,90123456),
             'codigomat' => $this->faker->unique()->numberBetween(20210000,20219999),
-            'fechareg' => $this->faker->dateTimeBetween('now', '+01 days'),
+            'fechareg' => $this->faker->dateTimeBetween('now', '+01 hour'),
         ];
     }
 }

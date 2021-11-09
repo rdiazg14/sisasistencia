@@ -2,10 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Support\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use App\Models\Alumnos;
 class AlumnosTableSeeder extends Seeder
 {
     /**
@@ -15,19 +13,18 @@ class AlumnosTableSeeder extends Seeder
      */
     public function run()
     {   
-        \App\Models\Alumnos::factory()->count(30)->create(); 
         
         //
         //DB::select(DB::raw("SET SESSION time_zone = 'Europe/Paris'"));
-        // DB::table('alumnos')->insert([
+        DB::table('alumnos')->insert([
         
-        //     'nombre' => 'Shirley',
-        //     'apellidopa' => 'Espino',
-        //     'apellidoma' => 'Cardenas',
-        //     'dni' => '12345678',
-        //     'codigomat' => 2021123456,
-        //     'fechareg' => DB::raw('CURRENT_TIMESTAMP'),
-        //     ]);
+            'nombre' => 'Shirley',
+            'apellidopa' => 'Espino',
+            'apellidoma' => 'Cardenas',
+            'dni' => '46345678',
+            'codigomat' => 20214269,
+            'fechareg' => DB::raw('CURRENT_TIMESTAMP - INTERVAL 5 HOUR'),
+            ]);
 
     }
 }
