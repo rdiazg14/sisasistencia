@@ -60,6 +60,20 @@ class Sidebar extends Component
                     'titulo' => 'Administrativos',
                     'ruta' => 'administrativos'
                 ],
+            ],
+            "Relación Personal" => [
+                [
+                    'titulo' => 'Alumnos',
+                    'ruta' => 'lista' //route('alumnos.reportes')
+                ],
+                [
+                    'titulo' => 'Docentes',
+                    'ruta' => 'docentes'
+                ],
+                [
+                    'titulo' => 'Administrativos',
+                    'ruta' => 'administrativos'
+                ],
             ]
         ];
 

@@ -56,6 +56,17 @@ class AlumnosController extends Controller
         ]);
     }
 
+    public function buscaralumnolist(Request $request)
+    {
+
+        $dni = $request->input('nombre');
+        $alumno_b = Alumnos::where('dni', 'LIKE', '%' . $dni . '%')
+            ->orderBy('fechareg', 'DESC')->paginate(5);
+        return view('admin.alumnos.tablista', [
+            'listadolist' => $alumno_b
+        ]);
+    }
+
     public function imprimir(Request $request){
         $dni = $request->input('nombre');
         $alumno_b = Alumnos::where('dni', 'LIKE', '%' . $dni . '%')
@@ -68,6 +79,10 @@ class AlumnosController extends Controller
   
     public function reportes(){
         return view('admin.alumnos.reportes');
+    }
+
+    public function lista(){
+        return view('admin.alumnos.lista');
     }
 
 

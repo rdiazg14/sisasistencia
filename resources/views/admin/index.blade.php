@@ -117,6 +117,51 @@
                     </div>
                 </div>
                 <!-- ./col -->
+                <div class="col-lg-4 col-6">
+                    <!-- small box -->
+                    <div class="small-box bg-success">
+                        <div class="inner">
+                            <h3>Relación de Alumnos</h3>
+
+                            <p>Alumnos Matriculados ONLINE</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-list-ol"></i>
+                        </div>   
+                        <a href="lista" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-4 col-6">
+                    <!-- small box -->
+                    <div class="small-box bg-success">
+                        <div class="inner">
+                            <h3>Relación de Docentes</h3>
+
+                            <p>Docentes del Colegio ONLINE</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-list-ol"></i>
+                        </div>
+                        <a href="docenteslist" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-4 col-6">
+                    <!-- small box -->
+                    <div class="small-box bg-success">
+                        <div class="inner">
+                            <h3>Relación de Personal</h3>
+
+                            <p>Personal del Colegio ONLINE</p>
+                        </div>
+                        <div class="icon"> 
+                            <i class="fas fa-list-ol"></i>
+                        </div>
+                        <a href="administrativoslist" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <!-- ./col -->
             </div>
             <!-- /.row -->
         </div><!-- /.container-fluid -->

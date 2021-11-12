@@ -17,11 +17,14 @@
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+
 </head>
 <body class="hold-transition login-page">
+  <img src="{{  asset('dist/img/fondo2.jpg') }} "  style="height:99%;width: 99%;" alt="Logo Sedapal" class="brand-image-xl logo-xl elevation-3 rounded mb-0" >  
 <div class="login-box">
-  <div class="login-logo">
-    <a href="index2.html"><b>SISAsistencia AWS </b>Colegio LATINO</a>
+  <div class="login-logo display-4text-white bg-dark" style="position: relative;">
+    <a href=""><b>SISAsistencia AWS </b>Colegio LATINO</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
