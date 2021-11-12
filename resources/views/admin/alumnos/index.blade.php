@@ -37,7 +37,7 @@
                                         <form autocomplete="off" action="" id="formulario_buscar" class="form-inline">
                                             <div class="form-group">
                                                 <label for="" class="col-form-label mr-3">DNI</label>
-                                                <input type="text" id="nombre" name="nombre" class="form-control"/>
+                                                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="buscar DNI ..."/>
                                             </div>
                                             <button onclick="buscar()" type="button" class="btn btn-sm btn-primary ml-2 mr-2"><i class="fas fa-search"></i>
                                                 Buscar
