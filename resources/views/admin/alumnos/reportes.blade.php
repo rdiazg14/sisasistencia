@@ -39,13 +39,15 @@
                                                 <label for="" class="col-form-label mr-3">DNI</label>
                                                 <input type="text" id="nombre" name="nombre" class="form-control" placeholder="buscar DNI ..."/>
                                             </div>
-                                            <button onclick="buscar()" type="button" class="btn btn-sm btn-primary ml-2 mr-2"><i class="fas fa-search"></i>
+                                            <button onclick="buscaralumno()" type="button" class="btn btn-sm btn-primary ml-2 mr-2"><i class="fas fa-search"></i>
                                                 Buscar
                                             </button> 
                                             {{-- <button onclick="formularioCrear(this)" type="button" class="btn btn-sm btn-success ml-2 mr-2"><i class="fas fa-plus"></i> --}}
-                                                <button onclick="" type="button" class="btn btn-sm btn-success ml-2 mr-2"><i class="fas fa-receipt"></i> - 
+                                                <button onclick="imprimir()" type="button" class="btn btn-sm btn-success ml-2 mr-2"><i class="fas fa-receipt"></i> - 
                                                 Generar Reporte de Asistencia
                                             </button>
+
+                                                
                                         </form>
                                     </div>
                                 </div>
@@ -88,15 +90,15 @@ document.addEventListener('DOMContentLoaded', function(evento){
       });
       document.getElementById('nombre').addEventListener('keydown',function(e){
         if(e.keyCode == 13){
-          buscar();
+            buscaralumno();
         }
       });
-      buscar();
+      buscaralumno();
     });
 
-    function buscar(pagina = 1) {
+    function buscaralumno(pagina = 1) {
     const nombre = document.getElementById('nombre').value;
-    axios.get('{{ route('alumnos.buscar') }}', {
+    axios.get('{{ route('alumnos.buscaralumno') }}', {
         "params": {
             "nombre": nombre,
             "page": pagina
@@ -107,6 +109,16 @@ document.addEventListener('DOMContentLoaded', function(evento){
         // si hubo un error
     });
 }
+
+
+
+    function imprimir() {
+    const nombre = document.getElementById('nombre').value;
+    location.href='{{ route('imprimir') }}';
+    
+}   
+
+
 
 //data-toggle="modal" data-target="#modal-alumno" 
 function cargandoModal() {

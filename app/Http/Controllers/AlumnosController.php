@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Alumnos;
+use Barryvdh\DomPDF\PDF;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -44,7 +45,26 @@ class AlumnosController extends Controller
         ]);
     }
 
+    public function buscaralumno(Request $request)
+    {
 
+        $dni = $request->input('nombre');
+        $alumno_b = Alumnos::where('dni', 'LIKE', '%' . $dni . '%')
+            ->orderBy('fechareg', 'DESC')->paginate(5);
+        return view('admin.alumnos.tablareportes', [
+            'listado' => $alumno_b
+        ]);
+    }
+
+    public function imprimir(Request $request){
+        $dni = $request->input('nombre');
+        $alumno_b = Alumnos::where('dni', 'LIKE', '%' . $dni . '%')
+            ->orderBy('fechareg', 'DESC')->paginate(5);
+        $pdf = \PDF::loadView('admin.alumnos.pdf', [
+            'listado' => $alumno_b
+        ])->setPaper('a4', 'landscape');
+        return $pdf->download('reporte_asistencia.pdf');
+   }    
   
     public function reportes(){
         return view('admin.alumnos.reportes');

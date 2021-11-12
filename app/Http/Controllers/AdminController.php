@@ -15,5 +15,17 @@ class AdminController extends Controller
         return view('admin.index');
     }
 
+    public function docentes(){
+        return view('admin.docentes.index');
+    }
+    public function administrativos(){
+        return view('admin.administrativos.index');
+    }
+    public function docentesrep(){
+        return view('admin.docentes.reportes');
+    }
+    public function administrativosrep(){
+        return view('admin.administrativos.reportes');
+    }
 
 }

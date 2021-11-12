@@ -53,7 +53,7 @@
                         <div class="icon">  
                             <i class="fas fa-chalkboard-teacher"></i>
                         </div>
-                        <a href="" data-toggle="modal" data-target="#exampleModal2" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="docentes" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
@@ -68,7 +68,7 @@
                         <div class="icon">
                             <i class="fas fa-user-friends"></i>
                         </div>
-                        <a href="" data-toggle="modal" data-target="#exampleModal3" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="administrativos" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
@@ -98,7 +98,7 @@
                         <div class="icon">
                             <i class="fas fa-receipt"></i>
                         </div>
-                        <a href="" data-toggle="modal" data-target="#exampleModal5" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="docentesrep" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
@@ -113,7 +113,7 @@
                         <div class="icon"> 
                             <i class="fas fa-receipt"></i>
                         </div>
-                        <a href="" data-toggle="modal" data-target="#exampleModal6" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="administrativosrep" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
