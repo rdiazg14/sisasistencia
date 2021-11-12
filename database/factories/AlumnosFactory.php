@@ -19,7 +19,7 @@ class AlumnosFactory extends Factory
             'apellidoma' => $this->faker->lastName(),
             'dni' => $this->faker->unique()->numberBetween(71434343,90123456),
             'codigomat' => $this->faker->unique()->numberBetween(20210000,20219999),
-            'fechareg' => $this->faker->dateTimeBetween('now', '+01 hour'),
+            'fechareg' => $this->faker->dateTimeBetween('now', '+1 hour'),
         ];
     }
 }

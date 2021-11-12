@@ -37,7 +37,7 @@
                         <div class="icon">   
                             <i class="fas fa-user-graduate"></i>
                         </div>
-                        <a href="" data-toggle="modal" data-target="#exampleModal" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="alumnos" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
 
                     </div>
                 </div>

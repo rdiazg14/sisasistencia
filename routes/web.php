@@ -26,6 +26,7 @@ Route::get("/admin", [AdminController::class,'inicio']);
 
 Route::get("/reportes", [AdminController::class,'reportes']);
 
+Route::get('/alumnos/buscar',[AlumnosController::class, 'buscar'])->name('alumnos.buscar');
 
 Route::resource('/alumnos',AlumnosController::class);
 
