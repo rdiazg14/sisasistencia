@@ -24,7 +24,7 @@ Route::group(['middleware' => ['auth']], function()  {
 
 Route::get("/admin", [AdminController::class,'inicio']);
 
-Route::get("/reportes", [AdminController::class,'reportes']);
+Route::get("/reportes", [AlumnosController::class,'reportes']);
 
 Route::get('/alumnos/buscar',[AlumnosController::class, 'buscar'])->name('alumnos.buscar');
 

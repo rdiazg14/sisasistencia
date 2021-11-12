@@ -83,7 +83,7 @@
                         <div class="icon">
                             <i class="fas fa-receipt"></i>
                         </div>
-                        <a href="" data-toggle="modal" data-target="#exampleModal4" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="reportes" class="small-box-footer">Acceder al módulo <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->

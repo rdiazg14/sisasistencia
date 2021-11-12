@@ -44,6 +44,13 @@ class AlumnosController extends Controller
         ]);
     }
 
+
+  
+    public function reportes(){
+        return view('admin.alumnos.reportes');
+    }
+
+
     // public function buscar_dni(Request $request)
     // {
 
