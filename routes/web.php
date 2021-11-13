@@ -15,9 +15,7 @@ use App\Http\Controllers\AlumnosController;
 |
 */
 
-Route::get('/', function () {
-    return view('auth.login');
-})->name('inicio');
+Route::get('/', function () {return view('auth.login'); })->name('inicio');
 
 Route::group(['middleware' => ['auth']], function()  {
 
