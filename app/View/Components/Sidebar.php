@@ -76,6 +76,10 @@ class Sidebar extends Component
                 ],
             ]
         ];
+        $botonSalir = [
+            'titulo' => 'SALIR',
+            'ruta' => route('logout')
+        ];
 
 
 
@@ -84,7 +88,8 @@ class Sidebar extends Component
             'nombreUsuario' => $nombreUsuario,
             'menuTablero' => $menuTablero,
             'opcionesMenu' => $opcionesMenu,
-            'ruta_actual' => $ruta_actual
+            'ruta_actual' => $ruta_actual,
+            'botonSalir' => $botonSalir
             
         ]);
     }

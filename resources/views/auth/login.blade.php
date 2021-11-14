@@ -21,15 +21,15 @@
 
 </head>
 <body class="hold-transition login-page">
-  <img src="{{  asset('dist/img/fondo2.jpg') }} "  style="height:99%;width: 99%;" alt="Logo Sedapal" class="brand-image-xl logo-xl elevation-3 rounded mb-0" >  
+  <img src="{{  asset('dist/img/fondo3.jpg') }} "  style="height:99%;width: 99%;" alt="Logo Sedapal" class="brand-image-xl logo-xl elevation-3 rounded mb-0" >  
 <div class="login-box">
   <div class="login-logo display-4text-white bg-dark" style="position: relative;">
-    <a href=""><b>SISAsistencia AWS </b>Colegio LATINO</a>
+    <a href=""><b>Colegio LATINO </b></a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Ingresa tus Credenciales y Accede al sistema ONLINE en AWS</p>
+      <p class="login-box-msg"><b>SISAsistencia Cloud - AWS</b></p>
 
       <form action="{{ route('login') }}" method="post">
         @csrf
@@ -72,7 +72,7 @@
         </div>
       </form>
 
-      <div class="social-auth-links text-center mb-3">
+      {{-- <div class="social-auth-links text-center mb-3">
         <p>- o también -</p>
         <a href="#" class="btn btn-block btn-primary">
           <i class="fab fa-facebook mr-2"></i> Ingresar usando Facebook
@@ -80,7 +80,7 @@
         <a href="#" class="btn btn-block btn-danger">
           <i class="fab fa-google-plus mr-2"></i> Ingresar usando Google+
         </a>
-      </div>
+      </div> --}}
       <!-- /.social-auth-links -->
 
       <p class="mb-1">
@@ -92,6 +92,12 @@
     </div>
     <!-- /.login-card-body -->
   </div>
+
+  <div class="login-logo display-4text-white bg-dark" style="position: relative;">
+    <h5>Desarrollado por: Shirley Espino Cárdenas <p> Cod. 2013120402</h5>
+  </div>
+
+
 </div>
 <!-- /.login-box -->
 

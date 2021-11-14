@@ -61,6 +61,15 @@
         </li>         
         @endforeach
 
+        <li class="nav-item  has-treeview">
+          <form action="{{$botonSalir['ruta'] }}" method="POST">
+              @csrf
+              <button class="bg-gradient-danger font-weight-bold text-white" >
+                   {{$botonSalir['titulo'] }}
+              </button>
+          </form>
+      </li>        
+
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
